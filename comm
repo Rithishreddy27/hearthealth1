@@ -1,110 +1,29 @@
-Git Version: Check if Git is installed using git --version.
-
-Git Config: Set up your name and email using git config.
-Essential for setting up your user name and email, ensuring that every commit you make is associated with the correct identity in the project history.
-Git Init: Start a new project by creating a Git repository.
-Example: git init creates an empty Git project.
-Git Status: Check the current state of your files and see if any changes need to be saved.
-Command: git status
-Git Add: Stage changes by adding files to the staging area before saving.
-Example: git add . stages all changes.
-Git Commit: Save your changes with a message explaining what was changed.
-Example: git commit -m "Added new feature"
-Git Diff: Compare changes between your current files and the last commit.
-Git Assistance: Obtain support for any Git command.
-Command: git help <command>
-Example: Use git help add to find out more about the git add command.
-
-
-
-
-
-
-
-
-git branch <branch_name>: This command generates a new branch.
-git branch -a: This command displays a list of all branches.
-git branch -d <branch_name>: This command removes a specified branch.
-
-git checkout <branch_name>: This command allows you to switch to an existing branch.
-git checkout -b <new_branch>: This command creates a new branch and switches to it in a single step.
-
-git merge <branch_name>: This command merges changes from the specified branch into the current branch.
-
-
-
-
-git log: Displays the complete history of your project.
-Includes:
-Commit Hash: A unique identifier for each change.
-Author: The person who made the change.
-Date: The time when the change was made.
-Message: A brief description of the change.
-
-git log –oneline: A streamlined version of git log, displaying the commit history with one line per commit.
-
-
-
-
-
-git revert <commit_hash>: Reverses the changes made in a specific commit without deleting the commit history. Here, <commit_hash> represents the unique identifier of the commit.
-
-
-Git Remote
-After creating Sample_example repository
-
-Git remote -v:Displays the list of remote repositories associated with your project, along with their corresponding URLs for fetching and pushing changes.
-
-git push -u origin main: Uploads your local changes to the remote repository named "origin" on the "main" branch and sets it as the default upstream branch for future pushes.
-
-New repository
-
-Connect Git to GitHub using an SSH key
-SSH Key: A secure method for connecting your computer to GitHub without requiring a password for each interaction.
-The SSH key pair consists of two components:
-Private Key: This remains on your computer and functions as a secret key.
-Public Key: This is shared with GitHub to verify your identity when you push code.
-
-Steps:
-Create SSH Key: Use the command ssh-keygen -t rsa to generate a key pair on your system.
-Copy Public Key: Copy the public part of the key (the .pub file).
-Add to GitHub: Go to your GitHub settings, navigate to “SSH and GPG keys,” and paste the public key. This action informs GitHub that it's your computer connecting.
-
-Ssh key to copy and paste in github
-
-Click on settings > SSH & GPS keys > new SSH KEYS >Now paste on key text box > Click on add SSH key
-
-After adding SSH key in github
-
-Git Clone
-git clone: This command is used to download a copy of a project from a remote repository (such as GitHub) to your local computer.
-
-
-ls –ltr will give the information of latest modified files along with date and time in the cloned GitHub.
-
-Git Push
-
-git status: Displays the current state of your working directory and staging area, showing which changes are staged, unstaged, or untracked.
-git commit: Records the changes made to the files in the staging area, creating a new commit in the repository's history.
-
-git remote -v: Lists the remote repositories associated with your project, displaying their URLs for both fetching and pushing changes.
-git push origin main: Sends your local changes to the remote repository named "origin" on the "main" branch.
-
-
-Sample_example repository
-
-Git pull
-git pull: This command brings the latest updates from a remote repository to your local repository. It fetches the changes and merges them with your current work.
-
-Files which are in Sample_example repository
-
-Git Fork
-Fork: A fork is a personal copy of someone else’s project that you can edit and change without affecting the original project.
-It’s usually used in open-source projects where you want to make your own changes and eventually propose them back.
-
-
-
-
-Fork for Sample_example
-
-Creating a fork
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+git init
+git status
+git add .
+git commit -m "Added new feature"
+git diff
+git help <command>
+git branch <branch_name>
+git branch -a
+git branch -d <branch_name>
+git checkout <branch_name>
+git checkout -b <new_branch>
+git merge <branch_name>
+git log
+git log --oneline
+git revert <commit_hash>
+git remote -v
+git push -u origin main
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
+git clone <repository_url>
+ls -ltr
+git status
+git commit
+git remote -v
+git push origin main
+git pull
