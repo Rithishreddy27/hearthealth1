@@ -27,3 +27,70 @@ git commit
 git remote -v
 git push origin main
 git pull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+git init
+git status
+git add .
+git commit -m "Added new feature"
+git diff
+git help <command>
+git branch <branch_name>                
+git branch -a                           
+git branch -d <branch_name>             
+git checkout <branch_name>              
+git checkout -b <new_branch>            
+git merge <branch_name>                 
+git log                                 
+git log --oneline                       
+git revert <commit_hash>                
+git remote add origin <repository_url>  
+git remote -v                            
+git clone <repository_url>              
+git push origin <branch_name>           
+git pull origin <branch_name>           
+
+# Forking a Repository (via GitHub UI)
+# 1. Go to the original repository on GitHub.
+# 2. Click the "Fork" button to create a personal copy.
+
+# SSH Key Setup (to connect Git to GitHub securely)
+ssh-keygen -t rsa                        # Generates a new SSH key pair
+# Copy the public key (.pub file) and add it to GitHub:
+# 1. Go to GitHub Settings -> SSH and GPG keys.
+# 2. Click "New SSH key."
+# 3. Paste the key and save.
+
+# Additional Useful Command
+ls -ltr                                  # Lists files in the repository with modification details
